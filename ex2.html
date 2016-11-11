@@ -1,0 +1,43 @@
+<!--
+Make an app to converts celcius to fahrenheit. No JavaScript is necessary. Hints at the bottom of this file.
+-->
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>Celcius to Fahrenheit</title>
+    <script src="angular.js"></script>
+  </head>
+  <body>
+    <!-- write AngularJS template code here -->
+    <!-- 摂氏→華氏　F=(9/5)*C + 32 -->
+    <input type="text" placeholder="celcius" ng-model="cel">
+    <label>{{cel}}ºC is {{(cel*(9/5) + 32)}}F.</label>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+Hints: Look at angular-examples/2-arithmetic.html. Use a number input instead of a text input to make sure that AngularJS is doing the number conversion for you:
+
+```
+<input type="number" ng-model="celcius">
+```
+
+The formula for conversion is:
+fahrenheit = celcius * 9 / 5 + 32
+-->
